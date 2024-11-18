@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Твое название сайта</h1>
+        <div class="container">
+            <h1>Matrix Tools</h1>
+            <p>Удобные инструменты для работы с матрицами</p>
+        </div>
     </header>
     <main>
         <section class="grid-container">
-            <a href="calculator_determinant.html" class="grid-item">Определитель матрицы</a>
-            <a href="calculator_inverse.html" class="grid-item">Обратная матрица</a>
-            <a href="calculator_multiplication.html" class="grid-item">Умножение матриц</a>
-            <a href="calculator_transpose.html" class="grid-item">Транспонирование матрицы</a>
+            <a href="calculator_determinant.html" class="grid-item">
+                <img src="images/determinant.svg" alt="Определитель" />
+                <h2>Определитель матрицы</h2>
+            </a>
+            <a href="calculator_inverse.html" class="grid-item">
+                <img src="images/inverse.svg" alt="Обратная матрица" />
+                <h2>Обратная матрица</h2>
+            </a>
+            <a href="calculator_multiplication.html" class="grid-item">
+                <img src="images/multiply.svg" alt="Умножение матриц" />
+                <h2>Умножение матриц</h2>
+            </a>
+            <a href="calculator_transpose.html" class="grid-item">
+                <img src="images/transpose.svg" alt="Транспонирование" />
+                <h2>Транспонирование матрицы</h2>
+            </a>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Matrix Tools. Все права не защищены.</p>
+    </footer>
 </body>
 </html>
-
