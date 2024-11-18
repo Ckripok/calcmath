@@ -1,88 +1,86 @@
 /* Общие стили */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     background: #f4f4f9;
     color: #333;
-}
-header {
-    background: #6200ea;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-.back-button {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    text-decoration: none;
-    color: white;
-    background: #3700b3;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-main {
-    padding: 2rem;
+    overflow-x: hidden;
 }
 
-/* Главная страница */
+header {
+    background: linear-gradient(135deg, #6200ea, #3700b3);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
 }
+
 .grid-item {
     display: block;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
     background: #bb86fc;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.grid-item img {
+    width: 80px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.grid-item h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .grid-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Калькулятор */
-.calculator-container {
-    display: flex;
-    gap: 2rem;
+.grid-item:hover img {
+    transform: scale(1.1);
 }
-.left-column, .right-column {
-    flex: 1;
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-textarea, button {
-    width: 100%;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-}
-button {
+
+footer {
     background: #6200ea;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-button:hover {
-    background: #3700b3;
-}
-pre {
-    background: #f4f4f9;
+    text-align: center;
     padding: 1rem;
-    border-radius: 8px;
-    overflow-x: auto;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
