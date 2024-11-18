@@ -1,0 +1,88 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+header {
+    background: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    text-decoration: none;
+    color: white;
+    background: #3700b3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+main {
+    padding: 2rem;
+}
+
+/* Главная страница */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.grid-item {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background: #bb86fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Калькулятор */
+.calculator-container {
+    display: flex;
+    gap: 2rem;
+}
+.left-column, .right-column {
+    flex: 1;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+textarea, button {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+button {
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #3700b3;
+}
+pre {
+    background: #f4f4f9;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+}
