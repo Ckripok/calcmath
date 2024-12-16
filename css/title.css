@@ -1,0 +1,86 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #6200ea, #3700b3);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.grid-item {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    background: #bb86fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item img {
+    width: 80px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.grid-item h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

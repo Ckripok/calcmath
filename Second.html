@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операции с матрицами</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="main-title">Простые операции с матрицами</h1>
+      <button id="hidden-button" aria-label="Подробнее о заголовке"></button>
+    </header>
+    <main class="calculator-container">
+      <div class="column">
+        <h2>Ввод матриц</h2>
+        <form id="matrix-form">
+          <label for="matrix1">Матрица 1 (разделяйте элементы пробелами, строки — новой строкой):</label>
+          <textarea id="matrix1" rows="5"></textarea>
+          <label for="operation">Выберите операцию:</label>
+          <select id="operation">
+            <option value="determinant">Детерминант</option>
+            <option value="rank">Ранг</option>
+            <option value="inverse">Инвертировать</option>
+            <option value="transpose">Транспонировать</option>
+          </select>
+          <button type="button" id="calculate-button">Рассчитать</button>
+        </form>
+      </div>
+      <div class="column">
+        <div id="solution">
+          <h2>Результат</h2>
+          <p>Введите данные и выберите операцию...</p>
+        </div>
+      </div>
+      <div class="column">
+        <h2>Код</h2>
+        <pre id="code-block">Здесь будет отображаться код выполнения...</pre>
+      </div>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Matrix Tools. Сделано с ❤</p>
+    </footer>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Простые операции с матрицами</h2>
+        <p>Добро пожаловать! Здесь вы можете выполнять различные операции с матрицами. Выберите подходящий инструмент и начните расчет!</p>
+        <main class="calculator-container">
+          <div class="column">
+            <h2>Ранг</h2>
+			    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+          <div class="column">
+            <h2>Инвертирование</h2>
+			    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+          <div class="column">
+            <h2>Определитель</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+          <div class="column">
+            <h2>Транспонирование</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+        </main>
+        <button id="close-modal" class="close-button">&times; Закрыть окно </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/SecondScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операции с матрицами</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+  </head>
+  <body>
+    <header>
+      <h1>Решение СЛУ. Метод Гаусса</h1>
+      <button id="hidden-button" aria-label="Подробнее о заголовке"></button>
+    </header>
+    <main class="calculator-container">
+      <div class="column">
+        <h2>Ввод матриц</h2>
+        <form id="matrix-form">
+          <label for="coefficients-matrix">Введите матрицу коэффициентов (каждая строка через пробел, строки разделены переводом строки):</label>
+          <textarea id="coefficients-matrix"  rows="5"></textarea>
+
+          <label for="constants-column">Введите столбец свободных членов:</label>
+          <textarea id="constants-column" rows="5"></textarea>
+
+          <button type="button" id="solve-system-button">Рассчитать</button>
+        </form>
+      </div>
+      <div class="column">
+        <div id="system-solution">
+          <h2>Результат</h2>
+          <p>Здесь появится результат...</p>
+        </div>
+      </div>
+      <div class="column">
+        <h2>Код</h2>
+        <pre id="code-block">Код выполнения появится здесь...</pre>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Matrix Tools. Сделано с ❤</p>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+
+        <h2>Решение СЛУ</h2>
+        <p>Добро пожаловать! Здесь вы можете выполнять различные операции с матрицами. Выберите подходящий инструмент и начните расчет!</p>
+        <main class="calculator-container">
+          <div class="column"> 
+            <h2>Метод Гаусса</h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+        </main>
+        <button id="close-modal" class="close-button">&times; Закрыть окно </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script> 
+    <script src="./js/ThreeScript.js"></script>
+  </body>
+</html>

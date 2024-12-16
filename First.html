@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простые операции с матрицами</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="main-title">Простые операции с матрицами</h1>
+      <button id="hidden-button" aria-label="Подробнее о заголовке"></button>
+    </header>
+    <main class="calculator-container">
+      <div class="column">
+        <h2>Ввод данных</h2>
+        <form id="matrix-form">
+          <label for="matrix1">Матрица 1:</label>
+          <textarea id="matrix1" placeholder="Пример: 1 2 3\n4 5 6"></textarea>
+
+          <label for="matrix2">Матрица 2:</label>
+          <textarea id="matrix2" placeholder="Пример: 7 8 9\n10 11 12"></textarea>
+
+          <label for="operation">Операция:</label>
+          <select id="operation">
+            <option value="add">Сложение</option>
+            <option value="subtract">Вычитание</option>
+            <option value="multiply">Умножение</option>
+          </select>
+
+          <button type="button" id="calculate-button">Рассчитать</button>
+        </form>
+      </div>
+      <div class="column">
+        <h2>Результат</h2>
+        <div id="solution" class="output-box">
+          <p>Введите данные и выберите операцию...</p>
+        </div>
+      </div>
+      <div class="column">
+        <h2>Код</h2>
+        <pre id="code-block" class="output-box">Здесь будет отображаться код выполнения...</pre>
+      </div>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Matrix Tools. Сделано с ❤</p>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+
+        <h2>Простые операции с матрицами</h2>
+        <p>Добро пожаловать! Здесь вы можете выполнять различные операции с матрицами. Выберите подходящий инструмент и начните расчет!</p>
+        <main class="calculator-container">
+          <div class="column">
+            <h2>Сложение</h2>
+			<p> Сложить две матрицы можно только в том случае, если у них одинаковые размеры (одинаковое количество строк и столбцов). Для этого просто складываем соответствующие элементы матриц. </p>
+			<img src="./img/1.1.1.png">
+			<p>Пример: </p>
+			<img src="./img/1.1.2.png">
+          </div>
+          <div class="column">
+            <h2>Вычитание</h2>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+          <div class="column">
+            <h2>Умножение</h2>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+          </div>
+        </main>
+        <button id="close-modal" class="close-button">&times; Закрыть окно </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+	<script src="./js/FirstScript.js"></script>
+  </body>
+</html>
+

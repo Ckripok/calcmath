@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение СЛАУ</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+  </head>
+  <body>
+    <header>
+      <h1>Решение СЛАУ</h1>
+      <button id="hidden-button" aria-label="Подробнее о заголовке"></button>
+    </header>
+    <main class="calculator-container">
+      <div class="left-column">
+        <h2>Ввод данных</h2>
+        <form id="slae-form">
+          <label for="coefficients-matrix">Матрица коэффициентов (разделяйте элементы пробелами, строки — новой строкой):</label>
+          <textarea id="coefficients-matrix" rows="5" placeholder="Пример: &#10;2 1 -1&#10;-3 -1 2&#10;-2 1 2"></textarea>
+
+          <label for="constants-column">Столбец свободных членов (разделяйте элементы новой строкой):</label>
+          <textarea id="constants-column" rows="5" placeholder="Пример: &#10;8&#10;-11&#10;-3"></textarea>
+
+          <label for="method">Выберите метод:</label>
+          <select id="method">
+            <option value="monteCarlo">Метод Монте-Карло</option>
+            <option value="orthogonalization">Метод Ортогонализации</option>
+          </select>
+
+          <button type="button" id="solve-system-button">Решить</button>
+        </form>
+      </div>
+      </div>
+    <div class="column">
+      <div id="system-solution">
+        <h2>Результат</h2>
+        <p>Здесь появится результат...</p> 
+      </div>
+    </div>
+    <div class="right-column"> 
+      <h2>Код</h2>
+      <pre id="code-block">Код выполнения появится здесь...</pre>
+    </div>
+    </main> 
+  <footer>
+    <p>&copy; 2024 Matrix Tools. Сделано с ❤</p>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+
+      <h2>Решение СЛУ</h2>
+      <p>Добро пожаловать! Здесь вы можете выполнять различные операции с матрицами. Выберите подходящий инструмент и начните расчет!</p>
+      <main class="calculator-container">
+        <div class="column"> 
+          <h2>Монте-Карло</h2>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+        </div>
+                <div class="column"> 
+          <h2>Ортогонализация</h2>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCOgUQecHSkYT6UOeHouSV0G3edDtHi51tw&s">
+        </div>
+      </main>
+      <button id="close-modal" class="close-button">&times; Закрыть окно </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script> 
+  <script src="./js/FivesScript.js"></script>
+  </body>
+</html>
