@@ -90,7 +90,7 @@ label {
   font-weight: bold;
 }
 
-textarea, select, button {
+textarea, select, button, input {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -100,7 +100,7 @@ textarea, select, button {
   box-sizing: border-box;
 }
 
-textarea {
+textarea, input {
   resize: vertical;
   min-height: 80px;
 }
